@@ -29,9 +29,25 @@ h1 span{color:var(--accent)}
 .stat{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;text-align:center}
 /* toolbar */
 .toolbar{position:sticky;top:0;z-index:20;background:rgba(10,16,32,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:12px 0}
-.toolbar .wrap{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.toolbar .wrap{display:flex;flex-direction:column;gap:8px}
+.bar{display:flex;gap:8px;align-items:center}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.filtbtn{display:none}
+.chip.clear{border-style:dashed}
+@media(max-width:860px){
+  .toolbar{padding:8px 0}
+  .filtbtn{display:inline-block;white-space:nowrap}
+  .filters{display:none;flex-direction:column;align-items:stretch;gap:6px}
+  .filters.show{display:flex}
+  .chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{white-space:nowrap;flex:0 0 auto}
+  header{padding:44px 16px 18px}
+  .stats{gap:16px;margin-top:14px}
+  .legend{font-size:11px;gap:8px 14px}
+}
 .search{flex:1;min-width:220px;position:relative}
-.search input{width:100%;padding:11px 14px 11px 40px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit;font-size:14px;outline:none}
+.search input{width:100%;padding:10px 14px 10px 38px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit;font-size:14px;outline:none}
 .search input:focus{border-color:var(--accent)}
 .search svg{position:absolute;left:14px;top:12px;width:16px;height:16px;fill:none;stroke:var(--muted);stroke-width:2}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
@@ -116,10 +132,15 @@ mark{background:rgba(45,212,191,.25);color:inherit;border-radius:3px;padding:0 2
 </header>
 
 <div class="toolbar"><div class="wrap">
-  <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search peptides, aliases, effects…  (e.g. tendon, fatigue, libido, tirz)"></div>
-  <div class="chips" id="catchips"></div>
-  <div class="chips"><button class="chip" data-f="peptide">Peptides only</button><button class="chip" data-f="hype">Hype ≥4</button><button class="chip" data-f="ev">Evidence ≥4</button></div>
-  <button class="btn" id="expand">Expand all</button>
+  <div class="bar">
+    <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search peptides, effects, aliases…"></div>
+    <button class="btn filtbtn" id="filtbtn" aria-expanded="false">Filters <span id="filtcount"></span></button>
+    <button class="btn" id="expand">Expand all</button>
+  </div>
+  <div class="filters" id="filters">
+    <div class="chips" id="catchips"></div>
+    <div class="chips"><button class="chip" data-f="peptide">Peptides only</button><button class="chip" data-f="hype">Hype ≥4</button><button class="chip" data-f="ev">Evidence ≥4</button><button class="chip clear" id="clear">Clear</button></div>
+  </div>
 </div></div>
 
 <main class="wrap">
@@ -200,9 +221,12 @@ function apply(){
   document.querySelectorAll('.cat').forEach(s=>s.classList.toggle('hidden',!s.querySelector('.pep:not(.hidden)')));
   document.getElementById('empty').classList.toggle('hidden',shown>0);
 }
+document.getElementById('filtbtn').onclick=()=>{const f=document.getElementById('filters');const on=f.classList.toggle('show');document.getElementById('filtbtn').setAttribute('aria-expanded',on);};
+function count(){const n=state.cats.size+state.f.size;document.getElementById('filtcount').textContent=n?`(${n})`:'';}
+document.getElementById('clear').onclick=()=>{state.cats.clear();state.f.clear();document.querySelectorAll('.chip.on').forEach(b=>b.classList.remove('on'));count();apply();};
 document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value;apply();});
-document.getElementById('catchips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;b.classList.toggle('on');state.cats.has(b.dataset.cat)?state.cats.delete(b.dataset.cat):state.cats.add(b.dataset.cat);apply();});
-document.querySelectorAll('.chip[data-f]').forEach(b=>b.onclick=()=>{b.classList.toggle('on');state.f.has(b.dataset.f)?state.f.delete(b.dataset.f):state.f.add(b.dataset.f);apply();});
+document.getElementById('catchips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;b.classList.toggle('on');state.cats.has(b.dataset.cat)?state.cats.delete(b.dataset.cat):state.cats.add(b.dataset.cat);count();apply();});
+document.querySelectorAll('.chip[data-f]').forEach(b=>b.onclick=()=>{b.classList.toggle('on');state.f.has(b.dataset.f)?state.f.delete(b.dataset.f):state.f.add(b.dataset.f);count();apply();});
 // deep link
 if(location.hash){const p=document.querySelector(`.pep[data-slug="${location.hash.slice(1)}"]`);if(p){p.classList.add('open');setTimeout(()=>p.scrollIntoView({block:'center'}),50);}}
 </script>
