@@ -988,6 +988,33 @@
    }
   },
   {
+   "slug": "lipo-c",
+   "name": "Lipo-C",
+   "aliases": [
+    "MIC-B12",
+    "MIC injection",
+    "lipotropic injection",
+    "Lipo-C MIC"
+   ],
+   "klass": "metabolic",
+   "hype": "3",
+   "cat": "metabolic",
+   "oneliner": "MIC-B12 lipotropic injection (methionine/inositol/choline/B12); med-spa \"fat burner\" shot, not a peptide; weak evidence",
+   "evidence": "2",
+   "not_peptide": true,
+   "patent_risk": false,
+   "html": {
+    "what": "<p>⚠️ Not a peptide. Lipo-C is a compounded lipotropic injection blend containing methionine, inositol, choline (MIC), and cyanocobalamin or methylcobalamin (B12). Many formulations also include L-carnitine, thiamine (B1), pyridoxine (B6), or riboflavin. Produced by compounding pharmacies, not FDA-approved as a fixed-combination product. Included in this database because it is widely co-prescribed alongside peptide protocols in medspa and telehealth weight-loss programs.</p>",
+    "benefits": "<p>Enhanced hepatic fat mobilization (methionine and choline as methyl donors in phosphatidylcholine synthesis), improved insulin signaling (inositol), energy metabolism support (B12), and modest weight-loss acceleration when combined with caloric restriction. L-carnitine variants add mitochondrial fatty acid transport claims.</p>",
+    "evidence": "<p>Tier 2 — individual components (choline, methionine, B12, inositol) have well-established biochemistry and some clinical data in deficiency states. However, no large, independent RCTs demonstrate clinically significant weight loss from the lipotropic blend itself. Small observational studies report 1–3 lbs of additional loss over 8–12 weeks versus diet alone, often with non-significant differences. Mayo Clinic and Obesity Medicine Association do not list lipotropic injections as evidence-based obesity treatments.</p>\n<p><strong>Reported side effects &amp; risks.</strong> Mild and generally transient: injection site redness or soreness, fishy body odor (choline metabolism → trimethylamine), nausea, headache, and occasional hypotension at high choline doses. Compounding quality varies — unregulated blends carry sterility and potency risk. Contraindicated in active liver or kidney disease.</p>",
+    "dosing": "<p>0.25–1 mL intramuscular (deltoid or gluteal) or subcutaneous, 1–3× weekly. Exact component concentrations vary by pharmacy; standard MIC formulation: methionine 12.4 mg/mL, inositol 25 mg/mL, choline 25 mg/mL, B12 1 mg/mL. Cost: $15–35/vial via telehealth prescription.</p>",
+    "stacks": "<p>GLP-1 agonists (semaglutide, tirzepatide — the dominant pairing in telehealth weight-loss clinics), NAD+, B-complex, and peptides such as AOD-9604 or CJC-1295/ipamorelin. Rarely stacked with BPC-157 for GI support in GLP-1 users.</p>\n<p><strong>Bloodwork markers tracked.</strong> Liver enzymes (ALT/AST) to monitor hepatic health, lipid panel (LDL, triglycerides), homocysteine (methionine metabolism), serum B12 (baseline and follow-up in 8–12 weeks), and fasting glucose/insulin in metabolic syndrome patients.</p>",
+    "sentiment": "<p>Moderate enthusiasm in r/TirzepatideRX, r/Peptides, and medspa patient communities. Users on GLP-1 protocols report subjective energy improvement and \"feeling alive,\" attributing benefit to the B12 component and injection absorption versus oral supplements. Many others report no measurable change in weight or energy beyond placebo. Skeptic minority notes the evidence gap; popularity stems from low cost and medspa bundling more than demonstrated standalone efficacy.</p>",
+    "legal": "<p>Legal in the US with a prescription — available through licensed compounding pharmacies and telehealth platforms. Not FDA-approved as a fixed-combination drug product. No controlled substance scheduling. Quality varies; PCAB-accredited compounders preferred. Not WADA-relevant for most users.</p>",
+    "sources": "<ul><li><a href=\"https://www.eurekahealth.com/resources/weight-loss-b12-lipotropic-injections-work-en\" target=\"_blank\" rel=\"noopener\">https://www.eurekahealth.com/resources/weight-loss-b12-lipotropic-injections-work-en</a></li><li><a href=\"https://trimrx.com/blog/does-lipo-c-help-weight-loss/\" target=\"_blank\" rel=\"noopener\">https://trimrx.com/blog/does-lipo-c-help-weight-loss/</a></li><li><a href=\"https://www.reddit.com/r/Peptides/comments/1hc078c/lipoc_dosage_recommendations/\" target=\"_blank\" rel=\"noopener\">https://www.reddit.com/r/Peptides/comments/1hc078c/lipoc_dosage_recommendations/</a></li><li><a href=\"https://www.reddit.com/r/TirzepatideRX/comments/1rdrqfa/lipo_c\" target=\"_blank\" rel=\"noopener\">https://www.reddit.com/r/TirzepatideRX/comments/1rdrqfa/lipo_c</a></li><li><a href=\"https://www.reddit.com/r/Peptidesource/comments/1gb8f3k/shred_mic_lcarnitine_dosing_research/\" target=\"_blank\" rel=\"noopener\">https://www.reddit.com/r/Peptidesource/comments/1gb8f3k/shred_mic_lcarnitine_dosing_research/</a></li><li><a href=\"https://lovelymeds.com/blog/mic-b12-vs-lipo-c.html\" target=\"_blank\" rel=\"noopener\">https://lovelymeds.com/blog/mic-b12-vs-lipo-c.html</a></li></ul>"
+   }
+  },
+  {
    "slug": "pe-22-28",
    "name": "PE-22-28",
    "aliases": [
@@ -1050,8 +1077,8 @@
    "klass": "aesthetic",
    "hype": "3",
    "cat": "aesthetic",
-   "oneliner": "A synthetic 8-amino-acid peptide (acetyl octapeptide-3) designed to mimic the N-terminal end of SNAP-25, a protein in the SNARE complex that",
-   "evidence": "4",
+   "oneliner": "Acetyl octapeptide-3; topical \"Botox-like\" wrinkle peptide; injectable use is off-label community experimentation",
+   "evidence": "2",
    "not_peptide": false,
    "patent_risk": false,
    "html": {
@@ -1140,6 +1167,32 @@
     "sentiment": "<p>Quietly positive and trusted — \"boring in the best way.\" Home communities: r/covidlonghaulers, r/cfs, r/CIRS, r/Lyme. Users describe not getting sick when everyone else did. Low hype, high retention. Anchor of any immune stack.</p>",
     "legal": "<p>Approved abroad, not in the US — importing/selling it is unapproved-drug distribution but with minimal enforcement history. Some 503A pharmacies compounded it until the 2023 Category 2 list; not among the July 2026 PCAC reviews. Grey-market supply is largely Chinese generic thymalfasin — often higher quality than research-chem synthesis.</p>",
     "sources": "<ul><li><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7747025/\" target=\"_blank\" rel=\"noopener\">https://pmc.ncbi.nlm.nih.gov/articles/PMC7747025/</a></li><li><a href=\"https://www.reddit.com/r/NTNPerformance/comments/1sx69j7/thymosin_alpha1_guide_immune_support_dosing_and/\" target=\"_blank\" rel=\"noopener\">https://www.reddit.com/r/NTNPerformance/comments/1sx69j7/thymosin_alpha1_guide_immune_support_dosing_and/</a></li><li><a href=\"https://www.reddit.com/r/cfs/comments/1nl65vu/be_careful_about_thymosin_alpha1/\" target=\"_blank\" rel=\"noopener\">https://www.reddit.com/r/cfs/comments/1nl65vu/be_careful_about_thymosin_alpha1/</a></li><li><a href=\"https://www.reddit.com/r/covidlonghaulers/comments/1rrj4tl/dream_team_peptide_stack_for_lc/\" target=\"_blank\" rel=\"noopener\">https://www.reddit.com/r/covidlonghaulers/comments/1rrj4tl/dream_team_peptide_stack_for_lc/</a></li></ul>"
+   }
+  },
+  {
+   "slug": "adamax",
+   "name": "Adamax",
+   "aliases": [
+    "Adamax-1032",
+    "adamantane Semax analog",
+    "N-acetyl adamantane Semax"
+   ],
+   "klass": "cognitive",
+   "hype": "2",
+   "cat": "cognitive",
+   "oneliner": "Adamantane-modified Semax analog; \"stronger Semax\" nootropic; no dedicated human studies",
+   "evidence": "1",
+   "not_peptide": false,
+   "patent_risk": false,
+   "html": {
+    "what": "<p>A synthetic nootropic peptide derived from Semax (ACTH 4-10 heptapeptide, originally developed in Russia). Adamax adds N-terminal acetylation and a C-terminal adamantane (tricyclodecane) group to the Semax backbone. These modifications are intended to increase lipophilicity, improve resistance to enzymatic degradation, and enhance blood-brain barrier (BBB) penetration — theoretically yielding longer-lasting cognitive effects than the parent compound. The \"1032\" suffix appearing in some vendor listings is a catalogue identifier, not a distinct chemical designation.</p>",
+    "benefits": "<p>Enhanced focus and verbal fluency, improved memory consolidation, mood stabilization, stress resilience, motivation support (possibly via dopaminergic activity), neuroprotection via upregulation of BDNF and hippocampal TrkB receptor sensitivity.</p>",
+    "evidence": "<p>Tier 1 — no dedicated peer-reviewed studies on Adamax exist in humans or animals. All claimed mechanisms are extrapolated from Semax research, which itself is primarily rodent and small Russian clinical studies (stroke recovery, cognitive impairment) conducted before modern RCT standards. The adamantane modification's BBB-enhancing effect is a plausible medicinal chemistry strategy but unvalidated for this specific molecule.</p>\n<p><strong>Reported side effects &amp; risks.</strong> No controlled adverse-event data. Based on Semax analog extrapolation: headache, irritability, sleep disruption if dosed late in the day, and transient anxiety in sensitive users. Intranasal use may cause mild rhinitis. Purity and endotoxin risk apply across all unregulated research-chemical peptides. Long-term safety is entirely unknown.</p>",
+    "dosing": "<p>Intranasal: 100–300 mcg per dose, 1–2× daily (morning, optionally midday). Subcutaneous: 200–500 mcg daily. Cycle length 4–8 weeks with 2–4 week breaks. No standardized protocol; vendor guidance varies widely.</p>",
+    "stacks": "<p>Selank (anxiety buffer), Noopept (synaptic potentiation), racetams (cholinergic base), BPC-157 (neuroprotection rationale), and NAD+ for mitochondrial synergy. Some users pair with micro-dosed Semax to compare subjective effect.</p>\n<p><strong>Bloodwork markers tracked.</strong> No compound-specific markers established. Interested users occasionally self-report BDNF assays (expensive, variable), cortisol, and CBC to monitor baseline health. No validated biomarker panel exists.</p>",
+    "sentiment": "<p>Niche — primarily discussed in r/Nootropics, r/PeptideForum, and vendor-hosted Reddit communities. Reports describe subtle focus lift and verbal fluency, slightly longer-lasting than Semax with less of an \"overstimulated\" edge. Skepticism is high: multiple threads note the evidence gap and vendor-attribution of benefits. Enthusiasm is real but modest; most users treat it as exploratory.</p>",
+    "legal": "<p>Unscheduled in the US, EU, and most jurisdictions — technically legal to purchase as a research chemical. Not FDA-approved or EMA-approved for any use. Sold by grey-market peptide vendors; pricing approximately $30–60 per vial. No known compounding pharmacy produces it. WADA status: not explicitly listed but likely prohibited under S0 (non-approved substances).</p>",
+    "sources": "<ul><li><a href=\"https://www.reddit.com/r/Nootropics/comments/1wr7abi/adamax_research_experience/\" target=\"_blank\" rel=\"noopener\">https://www.reddit.com/r/Nootropics/comments/1wr7abi/adamax_research_experience/</a></li><li><a href=\"https://www.reddit.com/r/NTNPerformance/comments/1uuquri/peptide_adamax_a_chemistry_hypothesis_more_than_a/\" target=\"_blank\" rel=\"noopener\">https://www.reddit.com/r/NTNPerformance/comments/1uuquri/peptide_adamax_a_chemistry_hypothesis_more_than_a/</a></li><li><a href=\"https://www.reddit.com/r/APRHealthSolutions/comments/1q8sndl/adamax_comprehensive_guide/\" target=\"_blank\" rel=\"noopener\">https://www.reddit.com/r/APRHealthSolutions/comments/1q8sndl/adamax_comprehensive_guide/</a></li><li><a href=\"https://thepeptidecatalog.com/peptides/adamax\" target=\"_blank\" rel=\"noopener\">https://thepeptidecatalog.com/peptides/adamax</a></li><li><a href=\"https://pharmalabglobal.com/is-adamax-a-nootropic-peptide/\" target=\"_blank\" rel=\"noopener\">https://pharmalabglobal.com/is-adamax-a-nootropic-peptide/</a></li></ul>"
    }
   },
   {
